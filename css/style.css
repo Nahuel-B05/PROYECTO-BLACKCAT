@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(#393e46, #31373f, #2a2f38);
+}
+.navBar{
+    background-color: #222831;
+}
+
+@media (min-width: 400px){
+    .navBar{
+        display: flex;
+        width: 100%;
+        height: 3hv;
+    }
+    .navBar ul {
+        display: flex;
+        list-style: none;
+    }
+    .navBar .firstBar{
+        display: none;
+    }
+    .navBar .secondBar li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    .banner img{
+        height: 224px;
+        width: 100%;
+    }
+
+
+
+
+
+
+}
+
+@media (min-width:870px){
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222831;
+    height: 8vh;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.banner img{
+    width: 840px;
+    height: 440px;
+    align-self: center;
+    position: relative;
+}
+.cardBanner{
+    position: absolute;
+    bottom: 270px;
+    left: 600px;
+    background-color: #eeeeeeb6;
+    height: 170px;
+    width: 300px;
+    box-shadow: 1px 1px 20px 1px black;
+}
+/* Seccion Mangas */
+.mangas{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 50px;
+}
+.mangas .cardManga{
+    height: 400px;
+    width: 227px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mangas .cardManga img{
+    height: 300px;
+    width: 220px;
+}
+.cardManga h2{
+    text-align: center;
+    color: #EEEEEE;
+}
+.cardManga h3{
+    text-align: center;
+    color: #EEEEEE;
+}
+.cardManga a{
+    text-align: center;
+    border: 1px solid black;
+    background-color: #FD7014;
+}
+
+/* Footer */
+footer{
+    background-color: #222831;
+    height: 150px;
+    display: flex;
+}
+}
