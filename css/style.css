@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+
 }
 body{
     background:linear-gradient(#393e46, #31373f, #2a2f38);
@@ -15,15 +17,30 @@ body{
     .navBar{
         display: flex;
         width: 100%;
-        height: 50px;
+        height: 60px;
         justify-content: space-between;
         align-items: center;
         box-shadow: 1px 1px 20px 1px #EEEEEE;
         position: fixed;
         top: 0px;
+        align-items: center;
     }
     .logo{
         display: flex;
+        margin-top: 10px;
+    }
+    .logo img{ 
+        width: 50px;
+        height: 50px;
+        background-color: #EEEEEE;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-left: 10px;
+    }
+    .logo h2{
+        margin-left: 10px;
+        align-self: center;
+        letter-spacing: 1px;
     }
     .navBar h2{
         color: #EEEEEE;
@@ -37,7 +54,12 @@ body{
         margin-right: 20px;
         list-style: none;
         gap: 10px;
-        align-items: center;
+        margin-top: 10px;
+    }
+    .secondBar img{
+        height: 25px;
+        width: 25px;
+        align-self: center;
     }
     .navBar .secondBar li a{
         text-decoration: none;
@@ -45,13 +67,50 @@ body{
     }
     .banner{
         margin-top: 80px;
+        position: relative;
+        z-index: -1;
+    }
+    .cardBanner{
+        height: 160px;
+        width: 300px;
+        background-color: #eeeeee92;
+        box-shadow: 1px 1px 10px 0px black;
+        position: absolute;
+        top: 50px;
+        left: 50px;
     }
     .banner img{
         height: 224px;
         width: 100%;
     }
+    .cardBanner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .cardBanner h2{
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 35px;
+    }
+    .cardBanner p{
+        text-align: center;
+        
+    }
+    .cardBanner a{
+        text-decoration: none;
+        background-color: #FD7014;
+        padding: 5px 30px;
+        align-self: flex-end;
+        margin-right: 20px;
+        box-shadow: 1px 1px 5px 1px black;
+        color: #EEEEEE;
+        text-shadow: 1px 1px 1px black;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+    }
 
-
+    }
 
 
 
