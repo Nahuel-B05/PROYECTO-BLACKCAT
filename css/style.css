@@ -10,30 +10,46 @@ body{
     background-color: #222831;
 }
 
+
 @media (min-width: 400px){
     .navBar{
         display: flex;
         width: 100%;
-        height: 3hv;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 1px 20px 1px #EEEEEE;
+        position: fixed;
+        top: 0px;
     }
-    .navBar ul {
+    .logo{
         display: flex;
-        list-style: none;
+    }
+    .navBar h2{
+        color: #EEEEEE;
+        font-size: 20px;
     }
     .navBar .firstBar{
         display: none;
     }
+    .navBar .secondBar {
+        display: flex;
+        margin-right: 20px;
+        list-style: none;
+        gap: 10px;
+        align-items: center;
+    }
     .navBar .secondBar li a{
         text-decoration: none;
-        color: white;
+        color: white;        
     }
-
-    
+    .banner{
+        margin-top: 80px;
+    }
     .banner img{
         height: 224px;
         width: 100%;
     }
-
 
 
 
@@ -49,9 +65,7 @@ body{
     height: 8vh;
 }
 ul{
-    display: flex;
-    list-style: none;
-    gap: 30px;
+    
 }
 .banner{
     width: 100%;
