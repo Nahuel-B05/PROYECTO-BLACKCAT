@@ -187,6 +187,7 @@ footer {
         list-style: none;
         display: flex;
         justify-content: space-evenly;
+        padding: 0;
     }
 
     .titulos ul li a {
@@ -412,14 +413,44 @@ footer {
 
 
 
-@media (min-width:870px) {
+@media (min-width:460px) {
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .logo{
+        display: flex;
+        width: 30%;
+    }
     .navBar {
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         background-color: #222831;
         height: 8vh;
+        width: 70%;
     }
-
+    .firstBar{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    .firstBar li a{
+        color: #EEEEEE;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .secondBar{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    .dropDownMobile {
+        display: none;
+    }
+/* ------------Inicio Index Desktop------- */
     .banner {
         width: 100%;
         display: flex;
@@ -443,7 +474,7 @@ footer {
         box-shadow: 1px 1px 20px 1px black;
     }
 
-    /* Seccion Mangas */
+/*-------- Seccion Mangas --------*/
     .mangas {
         display: flex;
         justify-content: space-evenly;
@@ -480,10 +511,18 @@ footer {
         background-color: #FD7014;
     }
 
-    /* Footer */
+/*-------- Footer-------- */
     footer {
         background-color: #222831;
         height: 150px;
         display: flex;
     }
+
+    /* -----------------AddtoCart Page------------------- */
+
+
+
+
+
+
 }
