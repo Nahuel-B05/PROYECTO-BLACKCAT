@@ -84,19 +84,23 @@ footer {
         text-decoration: none;
         color: white;
     }
-    .menuMobile{
+
+    .menuMobile {
         background-color: #222831;
         --bs-dropdown-min-width: 5rem;
     }
-    .menuMobile li a{
+
+    .menuMobile li a {
         color: #EEEEEE;
         text-decoration: none;
         text-align: end;
     }
-    .menuMobile li a:hover{
+
+    .menuMobile li a:hover {
         background-color: #393e46;
         color: #FD7014;
     }
+
     .banner {
         padding-top: 80px;
         position: relative;
@@ -283,7 +287,8 @@ footer {
         color: #EEEEEE;
         text-decoration: none;
     }
-    .numBar ul li a:hover{
+
+    .numBar ul li a:hover {
         color: #FD7014;
         text-shadow: 1px 1px 30px black;
     }
@@ -414,15 +419,17 @@ footer {
 
 
 @media (min-width:460px) {
-    header{
+    header {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
     }
-    .logo{
+
+    .logo {
         display: flex;
         width: 30%;
     }
+
     .navBar {
         display: flex;
         justify-content: space-evenly;
@@ -431,26 +438,31 @@ footer {
         height: 8vh;
         width: 70%;
     }
-    .firstBar{
+
+    .firstBar {
         display: flex;
         list-style: none;
         gap: 30px;
     }
-    .firstBar li a{
+
+    .firstBar li a {
         color: #EEEEEE;
         text-decoration: none;
         font-size: 20px;
         text-transform: uppercase;
     }
-    .secondBar{
+
+    .secondBar {
         display: flex;
         list-style: none;
         gap: 30px;
     }
+
     .dropDownMobile {
         display: none;
     }
-/* ------------Inicio Index Desktop------- */
+
+    /* ------------Inicio Index Desktop------- */
     .banner {
         width: 100%;
         display: flex;
@@ -474,7 +486,7 @@ footer {
         box-shadow: 1px 1px 20px 1px black;
     }
 
-/*-------- Seccion Mangas --------*/
+    /*-------- Seccion Mangas --------*/
     .mangas {
         display: flex;
         justify-content: space-evenly;
@@ -511,18 +523,105 @@ footer {
         background-color: #FD7014;
     }
 
-/*-------- Footer-------- */
+    /*-------- Footer-------- */
     footer {
         background-color: #222831;
-        height: 150px;
         display: flex;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    footer h2, h3{
+        color: #EEEEEE;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .masInfo ul{
+        list-style: none;
+    }
+    .masInfo ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: #EEEEEE;
+        text-transform: uppercase;
     }
 
     /* -----------------AddtoCart Page------------------- */
+    .bannerAdd {
+        width: 100%;
+        height: 110vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
 
+    .bannerAdd .fondoBanner {
+        width: 100%;
+        height: 60vh;
+        border-radius: 90px;
+        grid-column: 2/12;
+        grid-row: 1/7;
+        filter: blur(1px);
+        filter: brightness(0.6);
+    }
 
-
-
-
-
+    .bannerAdd .mangaPreview {
+        width: 300px;
+        grid-column: 3/6;
+        grid-row: 5/13;
+        z-index: 1;
+        border: 2px solid #EEEEEE;
+    }
+    .bannerAdd .cardAddCart{
+        grid-column: 6/12;
+        grid-row: 7/12
+    }
+    .bannerAdd .cardAddCart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerAdd .cardAddCart h1{
+        color: #EEEEEE;
+        font-size: 50px;
+        letter-spacing: 1.5px;
+        text-shadow: 1px 1px 10px black;
+        text-transform: uppercase;
+    }
+    .bannerAdd .cardAddCart h2{
+        color: #EEEEEE;
+        font-size: 40px;
+        letter-spacing: 1.5px;
+        text-shadow: 1px 1px 10px black;
+        text-transform: uppercase;
+    }
+    .bannerAdd .cardAddCart h3{
+        color: #EEEEEE;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        text-shadow: 1px 1px 10px black;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .cantidad label{
+        color: #EEEEEE;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 10px black;
+    }
+    .cantidad input{
+        text-align: center;
+        font-size: 15px;
+    }
+    .bannerAdd .cardAddCart a{
+        color: #EEEEEE;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 30px;
+        background-color: #FD7014;
+        padding: 0px 30px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px black;
+        text-transform: uppercase;
+    }
 }
