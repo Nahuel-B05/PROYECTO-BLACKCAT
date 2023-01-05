@@ -6,6 +6,9 @@
 }
 
 body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background: linear-gradient(#393e46, #31373f, #2a2f38);
 }
 
@@ -419,30 +422,58 @@ footer {
 
 
 @media (min-width:460px) {
+    *{
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     header {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
+        position: fixed;
+        z-index: 1;
+        height: 50px;
     }
 
     .logo {
         display: flex;
         width: 30%;
     }
+    .logo img{
+        position: relative;
+        top: 10px;
+        left: 20px;
+        width: 90px;
+        background-color: #EEEEEE;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    .logo h2{
+        margin: 0;
+        color: #EEEEEE;
+        font-weight: 100;
+        font-size: 30px;
+        position: relative;
+        top: 10px;
+        left: 25px;
+    }
 
     .navBar {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        background-color: #222831;
+        align-items: flex-end;
         height: 8vh;
         width: 70%;
     }
 
     .firstBar {
+        margin: 0;
         display: flex;
         list-style: none;
         gap: 30px;
+        padding-bottom: 7px;
     }
 
     .firstBar li a {
@@ -451,11 +482,16 @@ footer {
         font-size: 20px;
         text-transform: uppercase;
     }
-
+    .firstBar li a:hover{
+        color: #FD7014;
+        font-weight: 10;
+    }
     .secondBar {
+        margin: 0;
         display: flex;
         list-style: none;
         gap: 30px;
+        padding-bottom: 7px;
     }
 
     .dropDownMobile {
@@ -467,6 +503,7 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding-top: 100px;
     }
 
     .banner img {
@@ -478,14 +515,35 @@ footer {
 
     .cardBanner {
         position: absolute;
-        bottom: 270px;
-        left: 600px;
+        bottom: 150px;
+        left: 400px;
         background-color: #eeeeeeb6;
         height: 170px;
         width: 300px;
         box-shadow: 1px 1px 20px 1px black;
     }
-
+    
+    .flechas{
+        display: flex;
+    }
+    .left{
+        position: relative;
+        top: -200px;
+        left: 150px;
+    }
+    .right{
+        position: relative;
+        top: -200px;
+        left: 860px;
+    }
+    .left img{
+        width: 40px;
+        height: 40px;
+    }
+    .right img{
+        width: 40px;
+        height: 40px;
+    }
     /*-------- Seccion Mangas --------*/
     .mangas {
         display: flex;
@@ -629,6 +687,8 @@ footer {
     }
     .adress h3{
         font-size: 20px;
+        margin-bottom: 8px;
+        padding: 0;
     }
     .redes ul{
         display: flex;
@@ -670,13 +730,14 @@ footer {
         grid-row: 1/7;
         filter: blur(1px);
         filter: brightness(0.6);
+        z-index: -1;
     }
 
     .bannerAdd .mangaPreview {
         width: 300px;
         grid-column: 3/6;
         grid-row: 5/13;
-        z-index: 1;
+        z-index: 0;
         border: 2px solid #EEEEEE;
     }
     .bannerAdd .cardAddCart{

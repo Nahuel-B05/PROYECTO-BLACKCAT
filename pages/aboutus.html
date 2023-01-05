@@ -5,25 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navBar">
-            <div class="logo">
-                <a href=""><img src="" alt="logo"></a>
-            </div>
+        <div class="logo">
+            <a href="../index.html"><img src="../asset/img/blackcat.png" alt="logo"></a>
             <h2>Black Cat</h2>
-            <ul>
+        </div>
+        <nav class="navBar">
+            <ul class="firstBar">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./biblioteca.html">Biblioteca</a></li>
-                <li><a href="./pages/figuras.html">Figuras</a></li>
+                <li><a href="./figuras.html">Figuras</a></li>
                 <li><a href="./aboutus.html">About US</a></li>
             </ul>
-            <ul>
-                <li><a href=""><img src="" alt="lupa"></a></li>
-                <li><a href=""><img src="" alt="canasto"></a></li>
-                <li><a href=""><img src="" alt="cuenta"></a></li>
+            <ul class="secondBar">
+                <li><a href=""><img src="../asset/img/magnify.png" alt="lupa"></a></li>
+                <li><a href=""><img src="../asset/img/cart-variant.png" alt="canasto"></a></li>
+                <li><a href=""><img src="../asset/img/user.png" alt="cuenta"></a></li>
+                <li>
+                    <div class="dropdown-center dropDownMobile">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./asset/img/menu.png" alt="menu">
+                        </button>
+                        <ul class="dropdown-menu menuMobile">
+                            <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="./pages/figuras.html">Biblioteca</a></li>
+                            <li><a class="dropdown-item" href="./pages/figuras.html">Figuras</a></li>
+                            <li><a class="dropdown-item" href="./pages/aboutus.html">About US</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,27 +48,25 @@
             <ul>
                 <li><a href="">Cambios</a></li>
                 <li><a href="">Envios</a></li>
-                <li><a href="">Como Comprar</a></li>
                 <li><a href="">About us</a></li>
+                <li><a href="">Como Comprar</a></li>
             </ul>
         </section>
         <section class="mediosPago">
             <h2>Medios de pago</h2>
-            <ul>
-                <li><a href=""><img src="" alt="visa"></a></li>
-                <li><a href=""><img src="" alt="master"></a></li>
-            </ul>
-            <ul>
-                <li><a href=""><img src="mp" alt=""></a></li>
-                <li><a href=""><img src="" alt="rp"></a></li>
-            </ul>
+            <div class="imagenesP">
+                <img src="../asset/img/visa.png" alt="visa">
+                <img src="../asset/img/mastercard.png" alt="mastercard">
+                <img src="../asset/img/mercadopago.png" alt="mercadopago">
+                <img src="../asset/img/pagofacil.png" alt="pagofacil">
+            </div>
         </section>
         <section class="contactanos">
             <h2>contactanos</h2>
             <div class="iconos">
-                <img src="" alt="mail">
-                <img src="" alt="phone">
-                <img src="" alt="location">
+                <img src="../asset/img/gmail.png" alt="mail">
+                <img src="../asset/img/phone-call.png" alt="phone">
+                <img src="../asset/img/placeholder.png" alt="location">
             </div>
             <div class="adress">
                 <h3>blablabla@gmail.com</h3>
@@ -64,15 +77,16 @@
         <section class="redes">
             <h2>Nuestras Redes</h2>
             <ul>
-            <li><a href="#"><img src="" alt="whatsapp"></a></li>
-            <li><a href="#"><img src="" alt="insta"></a></li>
-            <li><a href="#"><img src="" alt="twitter"></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=es"><img src="../asset/img/whatsapp.png" alt="whatsapp"></a>
+                </li>
+                <li><a href="https://www.instagram.com"><img src="../asset/img/instagram.png" alt="insta"></a></li>
+                <li><a href="https://twitter.com/?lang=es"><img src="../asset/img/twitter.png" alt="twitter"></a></li>
             </ul>
         </section>
         <section class="newsl">
             <h2>Newsletter</h2>
-            <input type="email" name="" id="">
-            <a href="">Send</a>
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su E-Mail">
+            <a href="#">Send</a>
         </section>
     </footer>
 </body>
