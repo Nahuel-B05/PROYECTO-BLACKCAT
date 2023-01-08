@@ -544,41 +544,90 @@ footer {
         width: 40px;
         height: 40px;
     }
+
+    .titulos h1{
+        color: #EEEEEE;
+        font-weight: 300;
+        text-align: center;
+        font-size: 80px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px black;
+    }
+    .orderList{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .orderList li a{
+        text-decoration: none;
+        color: #EEEEEE;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .orderList li a:hover{
+        color: #FD7014;
+        text-shadow: 1px 1px 1px black;
+    }
     /*-------- Seccion Mangas --------*/
     .mangas {
         display: flex;
         justify-content: space-evenly;
-        margin: 100px 50px;
+        margin: 40px 50px;
     }
 
     .mangas .cardManga {
-        height: 400px;
-        width: 227px;
-        border: 1px solid black;
+        width: 224px;
+        height: 450px;
+        border: 2px solid black;
+        background-color: #222831;
+        box-shadow: 1px 1px 3px 0px black;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
+
     }
 
     .mangas .cardManga img {
         height: 300px;
         width: 220px;
+        box-shadow: 1px 1px 4px black;
     }
 
     .cardManga h2 {
         text-align: center;
         color: #EEEEEE;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
 
     .cardManga h3 {
         text-align: center;
         color: #EEEEEE;
+        margin: 0;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 1px blue;
     }
 
     .cardManga a {
         text-align: center;
         border: 1px solid black;
         background-color: #FD7014;
+        padding: 10px 0px;
+        margin: 0px 12px;
+        margin-bottom: 10px;
+        color: #EEEEEE;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px black;
+        box-shadow: 1px 1px 3px 1px black;
+    }
+    .cardManga a:hover{
+        filter: brightness(120%);
+        color: black;
+        text-shadow: 1px 1px 1px #EEEEEE;
     }
     .numBar ul{
         padding: 0;
@@ -607,7 +656,8 @@ footer {
         color: #EEEEEE;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
     }
     .masInfo ul{
         padding: 0;
@@ -615,10 +665,11 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
     .masInfo ul li a{
         text-decoration: none;
-        font-size: 25px;
+        font-size: 15px;
         color: #EEEEEE;
         text-transform: uppercase;
         text-align: center;
@@ -653,37 +704,41 @@ footer {
     .contactanos{
         display: grid;
         width: 220px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:repeat(2,1fr); 
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:repeat(3,1fr); 
     }
     .contactanos h2{
-        grid-column: 1/3;
+        grid-column: 1/4;
         grid-row: 1/2;
         margin: 0;
     }
     .contactanos .adress h3{
         color: #EEEEEE;
         font-weight: 200;
+        font-size: 15px;
     }
     .iconos{
         grid-column: 1/2;
-        grid-row: 1/3;
+        grid-row: 1/4;
         align-self: center;
-        justify-self: flex-start;
+        justify-self: flex-end;
         display: flex;
         flex-direction: column;
+        padding-top: 25px;
     }
     .iconos img{
         width: 32px;
     }
     .adress{
-        grid-column: 1/3;
-        grid-row: 1/3;
-        padding-top: 10px;
+        grid-column: 2/4;
+        grid-row: 1/4;
         align-self: center;
-        justify-self: end;
+        justify-self: flex-start;
         display: flex;
         flex-direction: column;
+        padding-top: 40px;
+        padding-left: 10px;
+        gap: 5px;
     }
     .adress h3{
         font-size: 20px;
@@ -692,10 +747,9 @@ footer {
     }
     .redes ul{
         display: flex;
-        padding-top: 20px;
         gap: 20px;
         list-style: none;
-        padding-left: 20px;
+        padding: 0;
     }
     .newsl input{
         border-radius: 20px;
@@ -715,8 +769,8 @@ footer {
 
     /* -----------------AddtoCart Page------------------- */
     .bannerAdd {
+        padding-top: 100px;
         width: 100%;
-        height: 110vh;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, 1fr);
@@ -725,7 +779,7 @@ footer {
     .bannerAdd .fondoBanner {
         width: 100%;
         height: 60vh;
-        border-radius: 90px;
+        border-radius: 50px;
         grid-column: 2/12;
         grid-row: 1/7;
         filter: blur(1px);
@@ -749,13 +803,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .bannerAdd .cardAddCart h1{
-        color: #EEEEEE;
-        font-size: 50px;
-        letter-spacing: 1.5px;
-        text-shadow: 1px 1px 10px black;
-        text-transform: uppercase;
+        gap: 10px;
+        
     }
     .bannerAdd .cardAddCart h2{
         color: #EEEEEE;
@@ -770,7 +819,6 @@ footer {
         letter-spacing: 1.5px;
         text-shadow: 1px 1px 10px black;
         text-transform: uppercase;
-        margin-bottom: 10px;
     }
     .cantidad label{
         color: #EEEEEE;
@@ -784,13 +832,62 @@ footer {
     }
     .bannerAdd .cardAddCart a{
         color: #EEEEEE;
-        margin-top: 20px;
         text-decoration: none;
         font-size: 30px;
         background-color: #FD7014;
-        padding: 0px 30px;
+        padding: 10px 30px;
         letter-spacing: 1px;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 2px black;
         text-transform: uppercase;
+        box-shadow: 1px 1px 4px 1px black;
+    }
+    .bannerAdd .cardAddCart a:hover{
+        filter: brightness(120%);
+        color: black;
+        text-shadow: 1px 1px 1px #EEEEEE;
+    }
+    .sinopsis{
+        margin: 0px 30px;
+        border: 2px solid #222831;
+    }
+    .sinopsis h2{
+        color: #EEEEEE;
+        text-shadow: 1px 1px 4px black;
+        font-size: 70px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .sinopsis p {
+        font-size: 30px;
+        color: #EEEEEE;
+        text-shadow: 1px 1px 1px black;
+    }
+    .relateds{
+        margin-top: 50px;
+    }
+    .relateds h2{
+        color: #EEEEEE;
+        text-align: center;
+        font-size: 80px;
+        text-shadow: 1px 1px 10px black;
+        letter-spacing: 1px;
+    }
+    #mangaAdd .cardManga{
+        width: 150px;
+        height: 300px;
+    }
+    #mangaAdd .cardManga img{
+        width: 150px;
+        height: 200px;
+    }
+    #mangaAdd .cardManga h2{
+        font-size: 15px;
+    }
+    #mangaAdd .cardManga h3{
+        font-size: 15px;
+    }
+    #mangaAdd .cardManga a{
+        font-size: 10px;
     }
 }
