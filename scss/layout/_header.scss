@@ -1,0 +1,54 @@
+header {
+    background-color: #222831;
+    width: 100%;
+    position: fixed;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+        width: 30%;
+        display: flex;
+        img{
+            position: relative;
+            top:10px;
+            left: 20px;
+            width: 90px;
+            background-color: $blanco;
+            border:$bordes;
+            border-radius: $circulo;
+        }
+        h2{
+            @include subtitulos(25px, 0.3px);
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+}
+.navBar{
+        display: flex;
+        align-items: flex-end;
+        gap: 50px;
+        width: 100%;
+        justify-content: space-around;
+        .firstBar{
+            @include flex-ul(flex-end, 20px);
+            padding: 0;
+            margin: 0;
+            li a{
+                @include links-a
+                &:hover{
+                    color: #FD7014;
+                    text-shadow: 1px 1px 1px black;
+                }
+            }
+        }
+        .secondBar {
+            @include flex-ul(flex-end,20px);
+            padding: 0;
+            margin: 0;
+            .dropDownMobile {
+                display: none;
+            }
+        }
+}

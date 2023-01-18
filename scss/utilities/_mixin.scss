@@ -1,0 +1,74 @@
+@mixin grid ($col, $row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+@mixin flex ($justify-content, $align-items, $flex-dir, $gap){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-dir;
+    gap: $gap;
+}
+@mixin flex-ul($jc, $gap){
+    display: flex;
+    list-style: none;
+    justify-content: $jc;
+    gap: $gap;
+}
+@mixin grid-hijo($col, $row){
+    grid-column: $col;
+    grid-row: $row;
+}
+@mixin links-a{
+    color: #EEEEEE;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px black;
+}
+@mixin addcart-boton($letra, $espacio, $p){
+    color: #EEEEEE;
+    letter-spacing: $espacio;
+    background-color: #fd7014;
+    padding: $p;
+    font-size: $letra;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 8px 1px black;
+    text-decoration: none;
+    text-align: center;
+}
+@mixin addcart-boton-hover{
+    filter: brightness(120%);
+    color: black;
+    text-shadow: 1px 1px 1px #EEEEEE;
+}
+@mixin titulos($letra, $espacio){
+    color: #EEEEEE;
+    font-size: $letra;
+    letter-spacing: $espacio;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+@mixin subtitulos($letra, $espacio){
+    color: #EEEEEE;
+    text-shadow: 1px 1px 4px black;
+    font-size: $letra;
+    text-transform: uppercase;
+    letter-spacing: $espacio;
+}
+
+@mixin gradiente {
+    background-image: linear-gradient(180deg,
+            hsl(218deg 11% 60%) 0%,
+            hsl(218deg 12% 55%) 11%,
+            hsl(218deg 13% 50%) 22%,
+            hsl(217deg 14% 45%) 33%,
+            hsl(216deg 15% 40%) 44%,
+            hsl(216deg 16% 35%) 56%,
+            hsl(215deg 17% 30%) 67%,
+            hsl(215deg 18% 25%) 78%,
+            hsl(213deg 19% 20%) 89%,
+            hsl(214deg 20% 16%) 100%);
+}
