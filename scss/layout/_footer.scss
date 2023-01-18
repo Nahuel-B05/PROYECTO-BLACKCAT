@@ -13,7 +13,7 @@ footer{
         padding: 0;
     }
     a{
-        @include links-a;
+        @include links-a(15px);
         &:hover{
             color:$naranja;
             text-shadow: $sombra-box-s;

@@ -1,0 +1,91 @@
+#tituloFiguras {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.figuras{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    .figura-card{
+        width: 260px;
+        height: 400px;
+        @include grid(repeat(6,1fr),repeat(6,1fr));
+        margin: 10px 10px ;
+        justify-items: center;
+        margin-bottom: 30px;
+        .borde{
+            grid-column: 1/7;
+            grid-row: 1/6;
+            width: 250px;
+            height: 400px;
+            border-left: 125px solid rgba(255, 255, 255, 0.726);
+            border-right: 125px solid rgba(255, 255, 255, 0.726);
+            border-top:  150px solid transparent;
+        }
+        figure{
+            grid-column: 1/7;
+            grid-row: 1/7;
+            margin: 0;
+            img{
+                width: 250px;
+                height: 250px;
+                filter: drop-shadow(0.3rem 0.5rem 1rem black);
+                z-index: 0;
+            }
+        figcaption{ 
+            h3{
+                margin: 0;
+                grid-column: 1/7;
+                grid-row: 4/5;
+                align-self: flex-end;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 1px;
+                text-shadow: $sombra-box-m;
+            }
+            h4{
+                margin: 0;
+                grid-column: 1/7;
+                grid-row: 4/5;
+                align-self: flex-end;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 1px;
+                text-shadow: $sombra-box-m;
+            }
+        }
+        }
+        a{
+            grid-column: 1/7;
+            grid-row: 5/6;
+            justify-self: center;
+            align-self: center;
+            @include addcart-boton(15px, 0.5px, 10px 50px);
+        }
+        &:hover{
+        @include addcart-boton-hover;
+        }
+        .boxInfo-figuras{
+            border: 1px solid black;
+            background-color: #fd7114b7;
+            color: #EEEEEE;
+            grid-column: 1/5;
+            grid-row: 1/3;
+            box-shadow: 1px 1px 6px 1px black;
+            justify-self: flex-start;
+            align-self: flex-start;
+            h3{
+                font-size: 20px;
+                padding: 2px 10px;
+                color: #EEEEEE;
+                text-align: center;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: black;
+                text-shadow: 1px 1px 1px black;
+            }
+        }
+    }
+}
