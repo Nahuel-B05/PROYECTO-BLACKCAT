@@ -1,6 +1,6 @@
 footer{
     background-color: $gris;
-    @include flex-s (space-between);
+    @include flex-s (space-around);
     padding-top: 20px;
     h2{
         @include subtitulos(20px, 0.5px);

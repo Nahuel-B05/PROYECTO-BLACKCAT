@@ -1,6 +1,7 @@
 body{
     background: linear-gradient(180deg, rgb(86, 91, 98) 0%, rgba(34,40,49,1) 100%);
-    }
+    margin: auto;    
+}
 .banner{
     margin: auto;
     width: 80%;
@@ -10,7 +11,7 @@ body{
         width: 100%;
         grid-column: 1/13;
         grid-row: 1/13;
-        height: 500px;
+        height: 80vh;
     }
     .cardBanner{
         grid-column: 5/9;
@@ -88,6 +89,8 @@ body{
 
 .mangas{
     display: flex;
+    margin: auto;
+    width: 80%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     .cardManga{

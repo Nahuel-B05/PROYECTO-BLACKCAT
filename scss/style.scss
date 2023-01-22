@@ -1,12 +1,7 @@
 @import "./utilities/mixin";
 @import "./utilities/variable";
 @import "./base/reset";
-@import "./layout/header";
-@import "./layout/main";
-@import "./layout/figuras/main-figuras";
-@import "./layout/aboutus/main-aboutus";
-@import "./layout/addtocart/main-addtocart";
-@import "./layout/biblioteca/main-biblioteca";
-@import "./layout/footer";
+@import "./base/typo";
+@import "./layout/media-desktop";
 @import "./layout/media-mobile";
 @import "./layout/media-tablet";

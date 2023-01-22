@@ -1,0 +1,9 @@
+@media (min-width:420px){
+    @import "./media_desktop/header";
+    @import "./media_desktop/main";
+    @import "./aboutus/main-aboutus";
+    @import "./addtocart/main-addtocart";
+    @import "./biblioteca/main-biblioteca";
+    @import "./figuras/main-figuras";
+    @import './media_desktop/footer';
+}

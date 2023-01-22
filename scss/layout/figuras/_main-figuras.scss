@@ -4,9 +4,10 @@
 }
 .figuras{
     display: flex;
+    width: 90%;
+    margin: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0px 20px;
     .figura-card{
         width: 260px;
         height: 400px;
