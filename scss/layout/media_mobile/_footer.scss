@@ -1,7 +1,9 @@
 footer{
+    font-family: 'Rajdhani', sans-serif;
     padding: 14px 0px;
     @include grid(repeat(4,1fr),repeat(4,1fr));
     h2{
+        font-family: 'Rajdhani', sans-serif;
         @include subtitulos(20px, 0.5px);
     }
 }

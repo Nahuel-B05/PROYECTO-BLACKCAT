@@ -16,11 +16,12 @@ body{
     .cardBanner{
         grid-column: 5/9;
         grid-row: 7/12;
-        box-shadow: $sombra-box-xs;
+        box-shadow: $sombra-box-m;
         background-color: #eeeeeee3;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 15px;
         h2{
             color: black;
             text-align: center;
@@ -34,7 +35,7 @@ body{
             letter-spacing: 0.4px;
         }
         a{
-            @include addcart-boton(20px, 1px, (10px 30px) );
+            @include addcart-boton(15px, 0.5px, (5px 30px) );
         &:hover{
             @include addcart-boton-hover;
         }}
@@ -77,6 +78,7 @@ body{
         margin-top: 30px;
     }
     .orderList{
+        margin: 30px 20px;
         @include flex-ul(space-evenly, 20px);
     li a{
         @include links-a(20px);

@@ -1,0 +1,35 @@
+#aboutUsMain{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../../../asset/img/bunchmangas.jfif); 
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+.fondoAbout{
+    grid-column: 1/13;
+    grid-row: 1/13;
+    margin: auto;
+    img{
+            box-shadow: 1px 1px 50px 20px black;
+            height: fit-content;
+            width: fit-content;
+            filter: brightness(50%);    
+        }
+}
+#aboutUs{
+        grid-column: 1/13;
+        grid-row: 1/4;
+        z-index: 0;
+    h1{ 
+        margin: 0;
+        text-shadow: 1px 1px 10px black;
+    }
+}
+.cuadroTexto{
+    grid-column: 3/11;
+    grid-row: 6/12;
+    color: $blanco;
+    font-size: 20px;
+    
+}

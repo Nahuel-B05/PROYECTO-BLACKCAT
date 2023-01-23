@@ -3,17 +3,19 @@ footer{
     @include flex-s (space-around);
     padding-top: 20px;
     h2{
-        @include subtitulos(20px, 0.5px);
+        font-family: 'Rajdhani', sans-serif;
+        @include subtitulos(15px, 0px);
     }
 }
 .masInfo{
     ul{
-        @include flex(center, center, column, 5px);
+        @include flex(center, center, column, 0px);
         list-style: none;
         padding: 0;
     }
     a{
         @include links-a(15px);
+        font-family: 'Rajdhani', sans-serif;
         &:hover{
             color:$naranja;
             text-shadow: $sombra-box-s;
@@ -21,6 +23,8 @@ footer{
     }
 }
 .mediosPago{
+    h2{
+        margin-bottom: 5px;     }
     .imagenesP{
         @include grid(repeat(2,1fr), repeat(2,1fr));
         gap: 5px;
@@ -63,7 +67,7 @@ footer{
         flex-direction: column;
         padding-top: 5px;
         img{
-            width: 32px;
+            width: 20px;
         }
     }
     .adress{
@@ -77,6 +81,7 @@ footer{
         padding-left: 10px;
         gap: 5px;
         h3{
+            font-family: 'Rajdhani', sans-serif;
             color: $blanco;
             font-size: 15px;
         }
@@ -88,14 +93,22 @@ footer{
         gap: 20px;
         list-style: none;
         padding: 0;
+        li a img{
+            width: 20px;
+            padding-top: 10px;
+        }
 }}
 .newsl{
     input{
         border-radius: 20px;
         text-align: center;
         border: $sombra-box-s;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bolder;
     }
     a{
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
         color: $blanco;
         background-color: $naranja;
         text-decoration: none;

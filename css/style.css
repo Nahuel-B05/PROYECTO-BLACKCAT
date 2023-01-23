@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -39,16 +40,15 @@
   .navBar {
     display: flex;
     align-items: flex-end;
-    gap: 50px;
-    width: 100%;
-    justify-content: space-around; }
+    gap: 30px;
+    width: 100%; }
     .navBar .firstBar {
+      width: 60%;
+      justify-self: center;
       display: flex;
       list-style: none;
       justify-content: flex-end;
-      gap: 20px;
-      padding: 0;
-      margin: 0; }
+      gap: 50px; }
       .navBar .firstBar li a {
         color: #EEEEEE;
         text-decoration: none;
@@ -59,13 +59,14 @@
           color: #FD7014;
           text-shadow: 1px 1px 1px black; }
     .navBar .secondBar {
+      width: 30%;
       display: flex;
       list-style: none;
       justify-content: flex-end;
-      gap: 20px;
-      padding: 0;
-      margin: 0; }
-      .navBar .secondBar .dropDownMobile {
+      gap: 20px; }
+      .navBar .secondBar li a img {
+        width: 25px; }
+      .navBar .secondBar .menuM {
         display: none; }
   body {
     background: linear-gradient(180deg, #565b62 0%, #222831 100%);
@@ -85,11 +86,12 @@
     .banner .cardBanner {
       grid-column: 5/9;
       grid-row: 7/12;
-      box-shadow: 1px 1px 5px 1px black;
+      box-shadow: 1px 1px 20px 1px black;
       background-color: #eeeeeee3;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      gap: 15px; }
       .banner .cardBanner h2 {
         color: black;
         text-align: center;
@@ -102,10 +104,10 @@
         letter-spacing: 0.4px; }
       .banner .cardBanner a {
         color: #EEEEEE;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         background-color: #fd7014;
-        padding: 10px 30px;
-        font-size: 20px;
+        padding: 5px 30px;
+        font-size: 15px;
         text-shadow: 1px 1px 2px black;
         text-transform: uppercase;
         box-shadow: 1px 1px 8px 1px black;
@@ -150,6 +152,7 @@
     text-shadow: 1px 1px 1px black;
     margin-top: 30px; }
   .titulos .orderList {
+    margin: 30px 20px;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -247,9 +250,38 @@
       .numBar ul li a:hover {
         color: #FD7014;
         text-shadow: 1px 1px 10px 1px black; }
+  #aboutUsMain {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../../../asset/img/bunchmangas.jfif);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr); }
+  .fondoAbout {
+    grid-column: 1/13;
+    grid-row: 1/13;
+    margin: auto; }
+    .fondoAbout img {
+      box-shadow: 1px 1px 50px 20px black;
+      height: fit-content;
+      width: fit-content;
+      filter: brightness(50%); }
+  #aboutUs {
+    grid-column: 1/13;
+    grid-row: 1/4;
+    z-index: 0; }
+    #aboutUs h1 {
+      margin: 0;
+      text-shadow: 1px 1px 10px black; }
+  .cuadroTexto {
+    grid-column: 3/11;
+    grid-row: 6/12;
+    color: #EEEEEE;
+    font-size: 20px; }
+  #mangas {
+    padding-top: 70px; }
   #tituloFiguras {
-    padding-top: 100px;
-    margin-bottom: 50px; }
+    padding-top: 70px; }
   .figuras {
     display: flex;
     width: 90%;
@@ -284,25 +316,18 @@
           z-index: 0; }
         .figuras .figura-card figure figcaption h3 {
           margin: 0;
-          grid-column: 1/7;
-          grid-row: 4/5;
-          align-self: flex-end;
           color: black;
           font-size: 30px;
           text-align: center;
-          letter-spacing: 1px;
-          text-shadow: 1px 1px 20px 1px black; }
+          letter-spacing: 1px; }
         .figuras .figura-card figure figcaption h4 {
           margin: 0;
-          grid-column: 1/7;
-          grid-row: 4/5;
-          align-self: flex-end;
           color: black;
           font-size: 30px;
           text-align: center;
-          letter-spacing: 1px;
-          text-shadow: 1px 1px 20px 1px black; }
+          letter-spacing: 1px; }
       .figuras .figura-card a {
+        margin-top: 10px;
         grid-column: 1/7;
         grid-row: 5/6;
         justify-self: center;
@@ -317,10 +342,10 @@
         box-shadow: 1px 1px 8px 1px black;
         text-decoration: none;
         text-align: center; }
-      .figuras .figura-card:hover {
-        filter: brightness(120%);
-        color: black;
-        text-shadow: 1px 1px 1px #EEEEEE; }
+        .figuras .figura-card a:hover {
+          filter: brightness(120%);
+          color: black;
+          text-shadow: 1px 1px 1px #EEEEEE; }
       .figuras .figura-card .boxInfo-figuras {
         border: 1px solid black;
         background-color: #fd7114b7;
@@ -344,18 +369,19 @@
     justify-content: space-around;
     padding-top: 20px; }
     footer h2 {
+      font-family: 'Rajdhani', sans-serif;
       color: #EEEEEE;
       text-shadow: 1px 1px 4px black;
-      font-size: 20px;
+      font-size: 15px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0px;
       text-align: center; }
   .masInfo ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 0px;
     list-style: none;
     padding: 0; }
   .masInfo a {
@@ -363,10 +389,13 @@
     text-decoration: none;
     font-size: 15px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px black; }
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Rajdhani', sans-serif; }
     .masInfo a:hover {
       color: #FD7014;
       text-shadow: 1px 1px 10px 1px black; }
+  .mediosPago h2 {
+    margin-bottom: 5px; }
   .mediosPago .imagenesP {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -404,7 +433,7 @@
       flex-direction: column;
       padding-top: 5px; }
       .contactanos .iconos img {
-        width: 32px; }
+        width: 20px; }
     .contactanos .adress {
       grid-column: 2/4;
       grid-row: 1/4;
@@ -416,6 +445,7 @@
       padding-left: 10px;
       gap: 5px; }
       .contactanos .adress h3 {
+        font-family: 'Rajdhani', sans-serif;
         color: #EEEEEE;
         font-size: 15px; }
   .redes ul {
@@ -423,11 +453,18 @@
     gap: 20px;
     list-style: none;
     padding: 0; }
+    .redes ul li a img {
+      width: 20px;
+      padding-top: 10px; }
   .newsl input {
     border-radius: 20px;
     text-align: center;
-    border: 1px 1px 10px 1px black; }
+    border: 1px 1px 10px 1px black;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder; }
   .newsl a {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
     color: #EEEEEE;
     background-color: #FD7014;
     text-decoration: none;
@@ -701,11 +738,13 @@
         color: #EEEEEE;
         text-shadow: 1px 1px 30px black; }
   footer {
+    font-family: 'Rajdhani', sans-serif;
     padding: 14px 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr); }
     footer h2 {
+      font-family: 'Rajdhani', sans-serif;
       color: #EEEEEE;
       text-shadow: 1px 1px 4px black;
       font-size: 20px;
