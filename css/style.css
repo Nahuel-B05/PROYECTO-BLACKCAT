@@ -339,7 +339,7 @@
       main .bannerAdd .cardAddCart img {
         grid-column: 1/5;
         grid-row: 2/12;
-        width: 250px;
+        width: 280px;
         height: 400px;
         justify-self: flex-end; }
       main .bannerAdd .cardAddCart .masDetalles {
@@ -379,8 +379,22 @@
           font-size: 13px;
           text-align: justify;
           letter-spacing: 0.4px; }
+  main .preview {
+    padding-top: 200px;
+    width: 80%;
+    margin: auto; }
+    main .preview h2 {
+      text-align: center;
+      color: #EEEEEE;
+      text-shadow: 1px 1px 1px black;
+      font-size: 40px;
+      margin-bottom: 10px; }
+    main .preview img {
+      width: 20%;
+      height: 300px;
+      margin: auto; }
   main .relateds {
-    padding-top: 200px; }
+    padding-top: 50px; }
     main .relateds h2 {
       margin-top: 20px;
       text-align: center;
