@@ -251,33 +251,154 @@
         color: #FD7014;
         text-shadow: 1px 1px 10px 1px black; }
   #aboutUsMain {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-image: url(../../../asset/img/bunchmangas.jfif);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr); }
-  .fondoAbout {
-    grid-column: 1/13;
-    grid-row: 1/13;
-    margin: auto; }
-    .fondoAbout img {
-      box-shadow: 1px 1px 50px 20px black;
-      height: fit-content;
-      width: fit-content;
-      filter: brightness(50%); }
-  #aboutUs {
-    grid-column: 1/13;
-    grid-row: 1/4;
-    z-index: 0; }
-    #aboutUs h1 {
-      margin: 0;
-      text-shadow: 1px 1px 10px black; }
-  .cuadroTexto {
-    grid-column: 3/11;
-    grid-row: 6/12;
-    color: #EEEEEE;
-    font-size: 20px; }
+    padding: 0;
+    margin: 0; }
+    #aboutUsMain #aboutUs {
+      padding-top: 50px; }
+      #aboutUsMain #aboutUs img {
+        width: 100%;
+        height: 200px;
+        filter: brightness(40%);
+        position: absolute;
+        z-index: -1; }
+      #aboutUsMain #aboutUs h1 {
+        font-size: 100px;
+        margin: 0;
+        text-shadow: 1px 1px 10px black;
+        letter-spacing: 3px;
+        padding-top: 30px; }
+    #aboutUsMain .articles {
+      margin-top: 40px; }
+      #aboutUsMain .articles h2 {
+        text-align: center;
+        color: #EEEEEE;
+        margin-bottom: 30px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 3px black; }
+      #aboutUsMain .articles .contenedorArticle {
+        margin: auto;
+        display: flex;
+        gap: 40px; }
+        #aboutUsMain .articles .contenedorArticle .cuadroTexto {
+          margin-left: 70px; }
+          #aboutUsMain .articles .contenedorArticle .cuadroTexto p {
+            text-align: justify;
+            color: #EEEEEE;
+            text-shadow: 1px 1px 3px black; }
+        #aboutUsMain .articles .contenedorArticle .cuadroTextoDos {
+          margin-right: 70px; }
+          #aboutUsMain .articles .contenedorArticle .cuadroTextoDos p {
+            text-align: justify;
+            color: #EEEEEE;
+            text-shadow: 1px 1px 1px black; }
+    #aboutUsMain .us {
+      display: flex;
+      margin-left: 70px;
+      margin-top: 100px;
+      margin-bottom: 80px; }
+      #aboutUsMain .us img {
+        width: 50%; }
+      #aboutUsMain .us .sideUs {
+        width: 40%;
+        margin: auto; }
+        #aboutUsMain .us .sideUs h2 {
+          text-align: center;
+          color: #EEEEEE;
+          text-shadow: 1px 1px 5px black;
+          padding-bottom: 30px;
+          font-size: 40px;
+          letter-spacing: 1px; }
+        #aboutUsMain .us .sideUs p {
+          color: #EEEEEE;
+          text-shadow: 1px 1px 5px black;
+          text-align: justify; }
+  main .bannerAdd {
+    width: 100%;
+    height: 80vh;
+    padding-top: 100px;
+    background-image: url(../../../asset/img/bnhfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    main .bannerAdd .cardAddCart {
+      background-color: #EEEEEE;
+      width: 80%;
+      margin: auto;
+      margin-top: 80px;
+      box-shadow: 0px 2px 10px 3px black;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr); }
+      main .bannerAdd .cardAddCart h2 {
+        grid-column: 5/13;
+        grid-row: 2/3;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: 2px; }
+      main .bannerAdd .cardAddCart img {
+        grid-column: 1/5;
+        grid-row: 2/12;
+        width: 250px;
+        height: 400px;
+        justify-self: flex-end; }
+      main .bannerAdd .cardAddCart .masDetalles {
+        grid-column: 6/13;
+        grid-row: 4/13;
+        display: flex;
+        gap: 100px; }
+        main .bannerAdd .cardAddCart .masDetalles h3 {
+          letter-spacing: 0.4px; }
+      main .bannerAdd .cardAddCart .cantidad {
+        grid-column: 6/13;
+        grid-row: 7/8;
+        align-self: center;
+        align-self: flex-start; }
+      main .bannerAdd .cardAddCart a {
+        grid-column: 7/11;
+        grid-row: 8/9;
+        color: #EEEEEE;
+        letter-spacing: 0px;
+        background-color: #fd7014;
+        padding: 10px 30px;
+        font-size: 15px;
+        text-shadow: 1px 1px 2px black;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 8px 1px black;
+        text-decoration: none;
+        text-align: center;
+        align-self: center; }
+      main .bannerAdd .cardAddCart .sinopsis {
+        grid-column: 6/12;
+        grid-row: 9/13;
+        align-self: center; }
+        main .bannerAdd .cardAddCart .sinopsis h3 {
+          text-align: start;
+          font-size: 18px; }
+        main .bannerAdd .cardAddCart .sinopsis p {
+          font-size: 13px;
+          text-align: justify;
+          letter-spacing: 0.4px; }
+  main .relateds {
+    padding-top: 200px; }
+    main .relateds h2 {
+      margin-top: 20px;
+      text-align: center;
+      color: #EEEEEE;
+      font-size: 40px;
+      text-shadow: 1px 1px 1px black; }
+    main .relateds #mangaAdd {
+      width: 70%;
+      margin: auto;
+      justify-content: center; }
+      main .relateds #mangaAdd .cardManga {
+        transform: scale(0.5); }
+  main #flechasAdd {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 250px; }
   #mangas {
     padding-top: 70px; }
   #tituloFiguras {

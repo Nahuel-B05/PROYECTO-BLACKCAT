@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -27,71 +26,76 @@
                 <li><a href=""><img src="../asset/img/magnify.png" alt="lupa"></a></li>
                 <li><a href="./addtocart.html"><img src="../asset/img/cart-variant.png" alt="canasto"></a></li>
                 <li><a href=""><img src="../asset/img/user.png" alt="cuenta"></a></li>
-                <li>
-                    <div class="dropdown-center dropDownMobile">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="../asset/img/menu.png" alt="menu">
-                        </button>
-                        <ul class="dropdown-menu menuMobile">
-                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                            <li><a class="dropdown-item" href=".figuras.html">Biblioteca</a></li>
-                            <li><a class="dropdown-item" href=".figuras.html">Figuras</a></li>
-                            <li><a class="dropdown-item hamburga" href=".aboutus.html">About US</a></li>
-                        </ul>
-                    </div></a>
-                </li>
+                <li class="menuM"><a href="#"><img src="../asset/img/menu.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="bannerAdd">
-            <img class="fondoBanner" src="../asset/img/fondoimagen.jpe" alt="">
-            <img class="mangaPreview" src="../asset/img/bnha190.jpg" alt="">
             <div class="cardAddCart">
                 <h2>Titulo del Manga</h2>
-                <h2># 9999</h2>
-                <h3>Precio: $ 9999</h3>
+                <img class="mangaPreview" src="../asset/img/bnha190.jpg" alt="previewCompra">
+                <div class="masDetalles">
+                    <div class="colIzq">
+                        <h3>Genero:</h3>
+                        <h3>Autor:</h3>
+                        <h3>vol:</h3>
+                        <h3>Precio:</h3>
+                    </div>
+                    <div class="colDere">
+                        <h3>Hero</h3>
+                        <h3>Nombre del Autor</h3>
+                        <h3>90</h3>
+                        <h3>$ 0000</h3>
+                    </div>
+                </div>
                 <div class="cantidad">
                     <label for="comprar">Ingrese la Cantidad:</label>
                     <input type="number" id="comprar" name="comprar" min="1" max="50">
                 </div>
                 <a href="#">ADD TO CART</a>
+                <div class="sinopsis">
+                    <h3>Sinopsis</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quisquam laudantium autem,<br>
+                        dolorum
+                        nemo inventore enim cumque placeat veritatis minus, itaque blanditiis ipsa eius? <br>Mollitia
+                        beatae
+                        dolor doloribus aperiam repudiandae!
+                    </p>
+                </div>
             </div>
-        </section>
-        <section class="sinopsis">
-            <h2>Sinopsis</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quisquam laudantium autem,<br> dolorum
-                nemo inventore enim cumque placeat veritatis minus, itaque blanditiis ipsa eius? <br>Mollitia beatae
-                dolor doloribus aperiam repudiandae!
-            </p>
+            </div>
         </section>
         <section class="relateds">
             <h2>Relacionados</h2>
             <div class="mangas" id="mangaAdd">
                 <div class="cardManga">
-                    <img src="../asset/img/bnha190.jpg" alt="">
+                    <img src="../asset/img/bnha190.jpg" alt="manga">
                     <h2>titulo Manga</h2>
                     <h3>$9999</h3>
                     <a href="./pages/addtocart.html">Ver mas</a>
                 </div>
                 <div class="cardManga">
-                    <img src="../asset/img/dbs16.jpg" alt="">
+                    <img src="../asset/img/dbs16.jpg" alt="manga">
                     <h2>titulo Manga</h2>
                     <h3>$9999</h3>
                     <a href="#">ver mas</a>
                 </div>
                 <div class="cardManga">
-                    <img src="../asset/img/bnha20.jpg" alt="">
+                    <img src="../asset/img/bnha20.jpg" alt="manga">
                     <h2>titulo Manga</h2>
                     <h3>$9999</h3>
                     <a href="#">ver mas</a>
                 </div>
                 <div class="cardManga">
-                    <img src="../asset/img/kimetsu8.jpg" alt="">
+                    <img src="../asset/img/kimetsu8.jpg" alt="manga">
                     <h2>titulo Manga</h2>
                     <h3>$9999</h3>
                     <a href="#">ver mas</a>
+                </div>
+                <div class="flechas" id="flechasAdd">
+                    <a class="left" href="#"><img src="../asset/img/nextLeft.png" alt="FlechaIzq"></a>
+                    <a class="right" href="#"><img src="../asset/img/nextRight.png" alt="FlechaDer"></a>
                 </div>
             </div>
         </section>
@@ -100,10 +104,10 @@
         <section class="masInfo">
             <h2>Mas Informacion</h2>
             <ul>
-                <li><a href="">Cambios</a></li>
-                <li><a href="">Envios</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Como Comprar</a></li>
+                <li><a href="#">Cambios</a></li>
+                <li><a href="#">Envios</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Como Comprar</a></li>
             </ul>
         </section>
         <section class="mediosPago">

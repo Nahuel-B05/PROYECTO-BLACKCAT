@@ -1,0 +1,97 @@
+main{
+.bannerAdd{
+    width: 100%;
+    height: 80vh;
+    padding-top: 100px;
+    background-image: url(../../../asset/img/bnhfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .cardAddCart{
+        background-color: $blanco;
+        width: 80%;    
+        margin: auto;    
+        margin-top: 80px;
+        box-shadow: 0px 2px 10px 3px black;
+        @include grid (repeat(12,1fr), repeat(12,1fr));
+        
+        h2{
+            grid-column: 5/13;
+            grid-row: 2/3;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+        img{
+            grid-column: 1/5;
+            grid-row: 2/12;
+            width: 250px;
+            height: 400px;
+            justify-self: flex-end;
+        }
+        .masDetalles{
+            grid-column: 6/13;
+            grid-row: 4/13;
+            display: flex;
+            gap: 100px;
+            h3{
+                letter-spacing: 0.4px;
+                
+            }
+            
+        }    
+        .cantidad{
+            grid-column: 6/13;
+            grid-row: 7/8;
+            align-self: center;
+            align-self: flex-start;
+        }
+        a{
+            grid-column: 7/11;
+            grid-row: 8/9;
+            @include addcart-boton(15px, 0px, (10px 30px));
+            
+            align-self: center;
+        }
+        .sinopsis{
+            grid-column: 6/12;
+            grid-row: 9/13;
+            align-self: center;
+            h3{
+                text-align: start;
+                font-size: 18px;
+            }
+            p{
+                font-size: 13px;
+                text-align: justify;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+    }
+    .relateds{
+        padding-top: 200px;
+        h2{
+            margin-top: 20px;
+            text-align: center;
+            color: $blanco;
+            font-size: 40px;
+            text-shadow: 1px 1px 1px black;
+        }
+        #mangaAdd{
+            width: 70%;
+            margin: auto;
+            justify-content: center;
+            .cardManga{
+                transform: scale(0.5);
+            }
+        }
+    }
+    #flechasAdd{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 250px;
+    }
+}
