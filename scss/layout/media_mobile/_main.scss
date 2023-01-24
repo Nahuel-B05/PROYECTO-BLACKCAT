@@ -290,15 +290,16 @@ body{
                 }}}}}
 .bannerAdd{
     width: 100%;
-    background-size: contain;
     padding-top: 100px;
+    #fondito{
+        display: none;
     }
     .cardAddCart{
         background-color: $blanco;
         border-radius: 30px;
         @include grid(repeat(10,1fr),repeat(8,1fr));
         h2{
-            grid-column: 6/10 ;
+            grid-column: 6/11 ;
             grid-row: 2/4;
             text-align: center;
             letter-spacing: 1px;
@@ -313,29 +314,26 @@ body{
             align-self: center;
             
         }
-        .masDetalles{
-            grid-column:6/10 ;
+        
+        .colIzq{
+                grid-column: 6/8;
+                grid-row: 3/7;
+                h3{
+                    font-size: 15px;
+                }
+            }
+        .colDere{
+            grid-column: 8/11;
             grid-row: 3/7;
-            display: flex;
-            justify-self: center;
-            gap: 5px;
-            .colIzq{
                 h3{
                     font-size: 15px;
                 }
             }
-            .colDere{
-                h3{
-                    font-size: 15px;
-                    text-align: end;
-                }
-            }
-        }
         .cantidad{
             grid-column: 6/10;
             grid-row: 6/7;
             align-self: flex-start;
-            justify-self: center;
+            justify-self: flex-start;
         }
         a{
             grid-column: 6/10;
@@ -347,7 +345,7 @@ body{
         .sinopsis{
             display: none;
         }
-    }
+    }}
     .preview{
         padding-top: 10px;
         margin: auto;
