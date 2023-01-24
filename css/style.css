@@ -286,6 +286,9 @@
             text-align: justify;
             color: #EEEEEE;
             text-shadow: 1px 1px 3px black; }
+            #aboutUsMain .articles .contenedorArticle .cuadroTexto p strong {
+              text-shadow: 1px 1px 3px #EEEEEE;
+              color: black; }
         #aboutUsMain .articles .contenedorArticle .cuadroTextoDos {
           margin-right: 70px; }
           #aboutUsMain .articles .contenedorArticle .cuadroTextoDos p {
@@ -313,6 +316,9 @@
           color: #EEEEEE;
           text-shadow: 1px 1px 5px black;
           text-align: justify; }
+          #aboutUsMain .us .sideUs p strong {
+            color: black;
+            text-shadow: 1px 1px 2px #EEEEEE; }
   main .bannerAdd {
     width: 100%;
     height: 80vh;
@@ -354,6 +360,11 @@
         grid-row: 7/8;
         align-self: center;
         align-self: flex-start; }
+        main .bannerAdd .cardAddCart .cantidad label {
+          font-size: 20px;
+          padding-right: 80px; }
+        main .bannerAdd .cardAddCart .cantidad input {
+          padding: 0px 20px; }
       main .bannerAdd .cardAddCart a {
         grid-column: 7/11;
         grid-row: 8/9;
@@ -389,10 +400,12 @@
       text-shadow: 1px 1px 1px black;
       font-size: 40px;
       margin-bottom: 10px; }
-    main .preview img {
-      width: 20%;
-      height: 300px;
-      margin: auto; }
+    main .preview .contenedorPreview {
+      display: flex;
+      justify-content: space-evenly; }
+      main .preview .contenedorPreview img {
+        width: 20%;
+        height: 300px; }
   main .relateds {
     padding-top: 50px; }
     main .relateds h2 {
@@ -400,13 +413,25 @@
       text-align: center;
       color: #EEEEEE;
       font-size: 40px;
-      text-shadow: 1px 1px 1px black; }
+      text-shadow: 1px 1px 1px black;
+      margin-bottom: 20px; }
     main .relateds #mangaAdd {
       width: 70%;
       margin: auto;
-      justify-content: center; }
+      justify-content: space-evenly; }
       main .relateds #mangaAdd .cardManga {
-        transform: scale(0.5); }
+        width: 150px;
+        height: 300px; }
+        main .relateds #mangaAdd .cardManga img {
+          height: 200px;
+          width: 150px; }
+        main .relateds #mangaAdd .cardManga h2 {
+          font-size: 20px; }
+        main .relateds #mangaAdd .cardManga h3 {
+          font-size: 18px; }
+        main .relateds #mangaAdd .cardManga a {
+          font-size: 10px;
+          padding: 3px 10px; }
   main #flechasAdd {
     width: 100%;
     display: flex;
@@ -617,46 +642,46 @@
     position: fixed;
     z-index: 1;
     background-color: #222831; }
-  .logo {
-    width: 50%;
-    display: flex; }
-    .logo img {
-      width: 50px;
-      height: 50px;
-      background-color: #EEEEEE;
-      border-radius: 50%;
-      border: 1px solid black;
-      margin-left: 10px;
-      margin-top: 5px; }
-    .logo h2 {
-      font-size: 20px;
-      margin-left: 10px;
-      align-self: center;
-      letter-spacing: 1px;
-      color: #EEEEEE;
+    header .logo {
+      width: 50%;
+      display: flex; }
+      header .logo img {
+        width: 50px;
+        height: 50px;
+        background-color: #EEEEEE;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-top: 5px; }
+      header .logo h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        align-self: center;
+        letter-spacing: 1px;
+        color: #EEEEEE;
+        align-self: flex-end; }
+    header .navBar {
+      width: 50%;
       align-self: flex-end; }
-  .navBar {
-    width: 50%;
-    align-self: flex-end; }
-    .navBar h2 {
-      color: #EEEEEE;
-      font-size: 20px; }
-    .navBar .firstBar {
-      display: none; }
-    .navBar .secondBar {
-      display: flex;
-      list-style: none;
-      gap: 10px;
-      justify-content: flex-end;
-      margin: 0;
-      align-items: flex-end; }
-      .navBar .secondBar img {
-        height: 25px;
-        width: 25px;
-        align-self: center; }
-      .navBar .secondBar li a {
-        text-decoration: none;
-        color: #EEEEEE; }
+      header .navBar h2 {
+        color: #EEEEEE;
+        font-size: 20px; }
+      header .navBar .firstBar {
+        display: none; }
+      header .navBar .secondBar {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        justify-content: flex-end;
+        margin: 0;
+        align-items: flex-end; }
+        header .navBar .secondBar img {
+          height: 25px;
+          width: 25px;
+          align-self: center; }
+        header .navBar .secondBar li a {
+          text-decoration: none;
+          color: #EEEEEE; }
   body {
     background: linear-gradient(180deg, #565b62 0%, #222831 100%); }
   .banner {
@@ -676,29 +701,27 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      grid-column: 4/10;
-      grid-row: 5/11; }
+      grid-column: 3/10;
+      grid-row: 4/12; }
       .banner .cardBanner h2 {
-        text-align: center;
-        letter-spacing: 1px;
-        font-size: 20px;
-        margin: auto; }
-      .banner .cardBanner .p {
-        text-align: center;
-        font-size: 10px;
-        margin: auto; }
-      .banner .cardBanner .a {
-        text-decoration: none;
-        background-color: #FD7014;
-        padding: 5px 30px;
-        align-self: flex-end;
-        margin: auto;
-        box-shadow: 1px 1px 5px 1px black;
-        color: #EEEEEE;
-        text-shadow: 1px 1px 1px black;
         letter-spacing: 0.5px;
-        margin-bottom: 5px;
-        font-size: 10px; }
+        text-align: center; }
+      .banner .cardBanner p {
+        text-align: justify;
+        font-size: 15px;
+        margin: 5px 5px 5px 5px; }
+      .banner .cardBanner a {
+        color: #EEEEEE;
+        letter-spacing: 0.5px;
+        background-color: #fd7014;
+        padding: 0px;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px black;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 8px 1px black;
+        text-decoration: none;
+        text-align: center;
+        margin: 0px 10px; }
     .banner .flechas {
       display: flex;
       justify-content: space-between;
@@ -724,10 +747,10 @@
       display: flex;
       justify-content: space-evenly;
       padding: 0; }
-      .titulos .orderList ul li a {
+      .titulos .orderList li a {
         color: #EEEEEE;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 15px;
         text-transform: uppercase;
         text-shadow: 1px 1px 1px black; }
   .mangas {
@@ -793,15 +816,23 @@
       .mangas .cardManga .boxInfo-manga {
         grid-column: 1/4;
         grid-row: 8/10;
-        background-color: #fd71148f;
+        background-color: #fd7114da;
         border: 1px solid black;
         text-align: center; }
         .mangas .cardManga .boxInfo-manga h3 {
           font-size: 15px;
           padding: 5px 0px;
-          text-shadow: 1px 1px 3px black; }
+          color: #EEEEEE; }
+  #tituloMangas {
+    padding-top: 100px; }
   #tituloFiguras {
     padding-top: 100px; }
+    #tituloFiguras .orderList li a {
+      color: #EEEEEE;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px black; }
   .figuras {
     display: flex;
     flex-direction: column; }
@@ -830,16 +861,19 @@
             grid-column: 3/11;
             grid-row: 8/9;
             margin: 0;
-            padding-top: 10px;
-            padding-bottom: 5px;
-            justify-self: center; }
+            justify-self: center;
+            font-size: 23px;
+            padding-top: 5px;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 1px #EEEEEE; }
           .figuras .figura-card figure figcaption h4 {
             grid-column: 3/11;
             grid-row: 9/10;
             margin: 0;
-            padding-top: 10px;
-            padding-bottom: 5px;
-            justify-self: center; }
+            justify-self: center;
+            font-size: 21px;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 1px #EEEEEE; }
       .figuras .figura-card a {
         grid-column: 2/12;
         grid-row: 10/13;
@@ -872,6 +906,129 @@
       .numBar ul li a {
         color: #EEEEEE;
         text-shadow: 1px 1px 30px black; }
+  #aboutUsMain #aboutUs {
+    padding-top: 61px; }
+    #aboutUsMain #aboutUs img {
+      filter: brightness(40%); }
+    #aboutUsMain #aboutUs h1 {
+      position: relative;
+      bottom: 63px; }
+  #aboutUsMain .articles {
+    width: 90%;
+    margin: auto; }
+    #aboutUsMain .articles h2 {
+      text-align: center;
+      color: #EEEEEE;
+      text-shadow: 1px 1px black;
+      margin-bottom: 15px; }
+    #aboutUsMain .articles p {
+      color: #EEEEEE;
+      text-align: justify;
+      text-shadow: 1px 1px black;
+      margin-bottom: 40px; }
+      #aboutUsMain .articles p strong {
+        color: black;
+        text-shadow: 1px 1px 3px #EEEEEE; }
+  #aboutUsMain .us {
+    width: 90%;
+    margin: auto; }
+    #aboutUsMain .us img {
+      width: 100%; }
+    #aboutUsMain .us .sideUs h2 {
+      text-align: center;
+      color: #EEEEEE;
+      text-shadow: 1px 1px black;
+      margin-top: 20px; }
+    #aboutUsMain .us .sideUs p {
+      text-align: justify;
+      color: #EEEEEE;
+      text-shadow: 1px 1px black; }
+      #aboutUsMain .us .sideUs p strong {
+        color: black;
+        text-shadow: 1px 1px 2px #EEEEEE; }
+  .bannerAdd {
+    width: 100%;
+    background-size: contain;
+    padding-top: 100px; }
+  .cardAddCart {
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr); }
+    .cardAddCart h2 {
+      grid-column: 6/10;
+      grid-row: 2/4;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 20px; }
+    .cardAddCart img {
+      width: 150px;
+      height: 220px;
+      grid-column: 1/6;
+      grid-row: 1/11;
+      justify-self: center;
+      align-self: center; }
+    .cardAddCart .masDetalles {
+      grid-column: 6/10;
+      grid-row: 3/7;
+      display: flex;
+      justify-self: center;
+      gap: 5px; }
+      .cardAddCart .masDetalles .colIzq h3 {
+        font-size: 15px; }
+      .cardAddCart .masDetalles .colDere h3 {
+        font-size: 15px;
+        text-align: end; }
+    .cardAddCart .cantidad {
+      grid-column: 6/10;
+      grid-row: 6/7;
+      align-self: flex-start;
+      justify-self: center; }
+    .cardAddCart a {
+      grid-column: 6/10;
+      grid-row: 7/8;
+      color: #EEEEEE;
+      letter-spacing: 0.2px;
+      background-color: #fd7014;
+      padding: 5px 30px;
+      font-size: 15px;
+      text-shadow: 1px 1px 2px black;
+      text-transform: uppercase;
+      box-shadow: 1px 1px 8px 1px black;
+      text-decoration: none;
+      text-align: center;
+      align-self: flex-end;
+      justify-self: center; }
+    .cardAddCart .sinopsis {
+      display: none; }
+  .preview {
+    padding-top: 10px;
+    margin: auto;
+    width: 100%; }
+    .preview h2 {
+      color: #EEEEEE;
+      letter-spacing: 1px;
+      font-size: 30px;
+      text-shadow: 1px 1px 2px black;
+      text-align: center; }
+    .preview .contenedorPreview {
+      display: flex;
+      flex-wrap: wrap; }
+      .preview .contenedorPreview img {
+        width: 180px;
+        height: 300px;
+        margin-left: 7px; }
+  .relateds {
+    padding-top: 50px; }
+    .relateds h2 {
+      color: #EEEEEE;
+      letter-spacing: 1px;
+      font-size: 30px;
+      text-shadow: 1px 1px 2px black;
+      text-align: center; }
+    .relateds .mangas .flechas {
+      display: none; }
   footer {
     font-family: 'Rajdhani', sans-serif;
     padding: 14px 0px;
@@ -896,10 +1053,11 @@
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .masInfo ul a {
+      .masInfo ul li a {
         text-decoration: none;
         color: #EEEEEE;
-        font-size: 25px; }
+        font-size: 15px;
+        font-family: "Rajdhani", sans-serif; }
   .mediosPago {
     grid-column: 3/5;
     grid-row: 3/5;
@@ -907,11 +1065,9 @@
     height: 150px;
     margin-top: 20px; }
     .mediosPago .imagenesP {
-      width: 170px;
-      height: 150px;
       margin: auto; }
       .mediosPago .imagenesP img {
-        width: 80px; }
+        width: 50px; }
   .contactanos {
     grid-column: 3/5;
     grid-row: 1/3;
@@ -930,10 +1086,11 @@
       padding-top: 3px; }
       .contactanos .adress h3 {
         color: #EEEEEE;
-        font-size: 14px;
+        font-size: 12px;
         text-shadow: 1px 1px 20px 1px black;
         letter-spacing: 1px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-family: "Rajdhani", sans-serif; }
     .contactanos .iconos {
       grid-column: 1/2;
       grid-row: 2/5;

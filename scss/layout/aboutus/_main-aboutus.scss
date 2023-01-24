@@ -37,6 +37,10 @@
                 text-align: justify;
                 color: $blanco;
                 text-shadow: 1px 1px 3px black;
+                strong{
+                    text-shadow: 1px 1px 3px $blanco;
+                    color: black;
+                }
             }}
     .cuadroTextoDos{
         margin-right: 70px;
@@ -44,6 +48,7 @@
             text-align: justify;
             color: $blanco;
             text-shadow: 1px 1px 1px black;
+            
         }}}}
     .us{
     display: flex;
@@ -68,6 +73,10 @@
             color: $blanco;
             text-shadow: 1px 1px 5px black;
             text-align: justify;
+            strong{
+                color: black;
+                text-shadow: 1px 1px 2px $blanco;
+            }
         }
     }
 }

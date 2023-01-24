@@ -19,33 +19,23 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        grid-column: 4/10;
-        grid-row: 5/11;
-    
-    h2{
-        text-align: center;
-        letter-spacing: 1px;
-        font-size: 20px;
-        margin: auto;
+        grid-column: 3/10;
+        grid-row: 4/12;
+        h2{
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            font-size: 15px;
+            margin: 5px 5px 5px 5px;
+        }
+        a{
+            @include addcart-boton(20px, 0.5px, 0px);
+            margin: 0px 10px;
+        }    
     }
-    .p{
-        text-align: center;
-        font-size: 10px;
-        margin: auto;
-    }
-    .a{
-        text-decoration: none;
-        background-color: #FD7014;
-        padding: 5px 30px;
-        align-self: flex-end;
-        margin: auto;
-        box-shadow: 1px 1px 5px 1px black;
-        color: #EEEEEE;
-        text-shadow: 1px 1px 1px black;
-        letter-spacing: 0.5px;
-        margin-bottom: 5px;
-        font-size: 10px;
-    }}
+
     .flechas{
         display: flex;
         justify-content: space-between;
@@ -72,8 +62,8 @@ body{
         display: flex;
         justify-content: space-evenly;
         padding: 0;
-        ul li a{
-            @include links-a(20px);
+        li a{
+            @include links-a(15px);
         }
     }
 }
@@ -142,19 +132,26 @@ body{
             .boxInfo-manga{
                 grid-column: 1/4;
                 grid-row: 8/10;
-                background-color: #fd71148f ;
+                background-color: #fd7114da ;
                 border: $bordes;
                 text-align: center;
             h3{
                 font-size: 15px;
                 padding: 5px 0px;
-                text-shadow: 1px 1px 3px black;
+                color: $blanco;
             }
             }
     }
 }
+
+#tituloMangas{
+    padding-top: 100px;
+}
 #tituloFiguras{
     padding-top: 100px;
+    .orderList li a{
+        @include links-a(15px);
+    }
 }
 .figuras{
     display: flex;
@@ -184,17 +181,20 @@ body{
                     grid-column: 3/11;
                     grid-row: 8/9;
                     margin: 0;
-                    padding-top: 10px;
-                    padding-bottom: 5px;
                     justify-self: center;
+                    font-size: 23px;
+                    padding-top: 5px;
+                    letter-spacing: 1px;
+                    text-shadow: 1px 1px 1px $blanco;
                 }
                 h4{
                     grid-column: 3/11;
                     grid-row: 9/10;
                     margin: 0;
-                    padding-top: 10px;
-                    padding-bottom: 5px;
                     justify-self: center;
+                    font-size: 21px;
+                    letter-spacing: 1px;
+                    text-shadow: 1px 1px 1px $blanco;
                 }}
         }
         a{
@@ -237,3 +237,149 @@ body{
         }
     }
 }
+#aboutUsMain{
+    #aboutUs{
+        padding-top: 61px;
+        img {
+            filter: brightness(40%);}
+        h1{
+            position: relative;
+            bottom: 63px;
+        }
+    }
+    .articles{
+        width: 90%;
+        margin: auto;
+        h2{
+            text-align: center;
+            color: $blanco;
+            text-shadow: 1px 1px black;
+            margin-bottom: 15px;
+        }
+        p{
+            color:$blanco;
+            text-align: justify;
+            text-shadow: 1px 1px black;
+            margin-bottom: 40px;
+            strong{
+                color: black;
+                text-shadow: 1px 1px 3px $blanco;
+            }
+        }
+    }
+    .us{
+        width: 90%;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+        .sideUs{
+            h2{
+                text-align: center;
+                color: $blanco;
+                text-shadow: 1px 1px black;
+                margin-top: 20px;
+            }
+            p{
+                text-align: justify;
+                color: $blanco;
+                text-shadow: 1px 1px black;
+                strong{
+                    color: black;
+                    text-shadow: 1px 1px 2px $blanco;
+                }}}}}
+.bannerAdd{
+    width: 100%;
+    background-size: contain;
+    padding-top: 100px;
+    }
+    .cardAddCart{
+        background-color: $blanco;
+        border-radius: 30px;
+        @include grid(repeat(10,1fr),repeat(8,1fr));
+        h2{
+            grid-column: 6/10 ;
+            grid-row: 2/4;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+        img{
+            width: 150px;
+            height: 220px;
+            grid-column: 1/6;
+            grid-row: 1/11;
+            justify-self: center;
+            align-self: center;
+            
+        }
+        .masDetalles{
+            grid-column:6/10 ;
+            grid-row: 3/7;
+            display: flex;
+            justify-self: center;
+            gap: 5px;
+            .colIzq{
+                h3{
+                    font-size: 15px;
+                }
+            }
+            .colDere{
+                h3{
+                    font-size: 15px;
+                    text-align: end;
+                }
+            }
+        }
+        .cantidad{
+            grid-column: 6/10;
+            grid-row: 6/7;
+            align-self: flex-start;
+            justify-self: center;
+        }
+        a{
+            grid-column: 6/10;
+            grid-row: 7/8;
+            @include addcart-boton(15px, 0.2px, 5px 30px);
+            align-self: flex-end;
+            justify-self: center;
+        }
+        .sinopsis{
+            display: none;
+        }
+    }
+    .preview{
+        padding-top: 10px;
+        margin: auto;
+        width: 100%;
+        h2{
+            color: $blanco;
+            letter-spacing: 1px;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px black;
+            text-align: center;
+        }
+        .contenedorPreview{
+            display: flex;
+            flex-wrap: wrap;
+        img{
+            width: 180px;
+            height: 300px;
+            margin-left: 7px;
+        }}
+    }
+    .relateds{
+        padding-top: 50px;
+        h2{
+            color: $blanco;
+            letter-spacing: 1px;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px black;
+            text-align: center;
+        }
+        .mangas{
+            .flechas{
+                display: none;
+            }
+        }
+    }

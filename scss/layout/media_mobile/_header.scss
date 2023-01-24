@@ -6,7 +6,7 @@ header {
     position: fixed;
     z-index: 1;
     background-color: $gris;
-}
+
 .logo{
     width: 50%;
     display: flex;
@@ -27,7 +27,7 @@ header {
         color: $blanco;
         align-self: flex-end;
     }
-}
+    }
 .navBar{
     width: 50%;
     align-self: flex-end;
@@ -55,4 +55,4 @@ header {
             text-decoration: none;
             color: $blanco;
         }
-    }}
+    }}}
