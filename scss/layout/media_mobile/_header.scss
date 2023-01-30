@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 60px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -8,40 +8,50 @@ header {
     background-color: $gris;
 
 .logo{
-    width: 50%;
-    display: flex;
+    width: 40%;
     img{
         width: 50px;
         height: 50px;
         background-color: $blanco;
         border-radius: $circulo;
         border: 1px solid black;
-        margin-left: 10px;
-        margin-top: 5px;
+        margin-left: 30px;
+        margin-top: 20px;
     }
     h2{
         font-size: 20px;
-        margin-left: 10px;
-        align-self: center;
         letter-spacing: 1px;
         color: $blanco;
-        align-self: flex-end;
+        margin-left: 20px;
     }
     }
 .navBar{
-    width: 50%;
+    width: 60%;
     align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
     h2{
         color: $blanco;
         font-size: 20px;
     }
     .firstBar{
-        display: none;
+        width: 30%;
+        display: flex;
+        flex-direction: column; 
+        gap: 4px;
+        list-style: none;
+        li a{
+            text-decoration: none;
+            color: $blanco;
+            text-transform: uppercase;
+        }
     }
     .secondBar{
+        width: 30%;
         display: flex;
+        flex-direction: column;
         list-style: none;
-        gap: 10px;
+        height: 100px;
         justify-content: flex-end;
         margin: 0;
         align-items: flex-end;
@@ -50,6 +60,9 @@ header {
             height: 25px;
             width: 25px;
             align-self: center;
+        }
+        .menuM{
+            display: none;
         }
         li a{
             text-decoration: none;

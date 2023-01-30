@@ -642,42 +642,51 @@
 @media (max-width: 418px) {
   header {
     width: 100%;
-    height: 60px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     position: fixed;
     z-index: 1;
     background-color: #222831; }
     header .logo {
-      width: 50%;
-      display: flex; }
+      width: 40%; }
       header .logo img {
         width: 50px;
         height: 50px;
         background-color: #EEEEEE;
         border-radius: 50%;
         border: 1px solid black;
-        margin-left: 10px;
-        margin-top: 5px; }
+        margin-left: 30px;
+        margin-top: 20px; }
       header .logo h2 {
         font-size: 20px;
-        margin-left: 10px;
-        align-self: center;
         letter-spacing: 1px;
         color: #EEEEEE;
-        align-self: flex-end; }
+        margin-left: 20px; }
     header .navBar {
-      width: 50%;
-      align-self: flex-end; }
+      width: 60%;
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-evenly; }
       header .navBar h2 {
         color: #EEEEEE;
         font-size: 20px; }
       header .navBar .firstBar {
-        display: none; }
-      header .navBar .secondBar {
+        width: 30%;
         display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style: none; }
+        header .navBar .firstBar li a {
+          text-decoration: none;
+          color: #EEEEEE;
+          text-transform: uppercase; }
+      header .navBar .secondBar {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
         list-style: none;
-        gap: 10px;
+        height: 100px;
         justify-content: flex-end;
         margin: 0;
         align-items: flex-end; }
@@ -685,17 +694,20 @@
           height: 25px;
           width: 25px;
           align-self: center; }
+        header .navBar .secondBar .menuM {
+          display: none; }
         header .navBar .secondBar li a {
           text-decoration: none;
           color: #EEEEEE; }
   body {
     background: linear-gradient(180deg, #565b62 0%, #222831 100%); }
   .banner {
-    padding-top: 80px;
+    padding-top: 130px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr); }
+    grid-template-rows: repeat(12, 1fr);
+    margin-bottom: 50px; }
     .banner img {
       height: 300px;
       width: 100%;
@@ -830,9 +842,9 @@
           padding: 5px 0px;
           color: #EEEEEE; }
   #tituloMangas {
-    padding-top: 100px; }
+    padding-top: 150px; }
   #tituloFiguras {
-    padding-top: 100px; }
+    padding-top: 150px; }
     #tituloFiguras .orderList li a {
       color: #EEEEEE;
       text-decoration: none;
@@ -913,7 +925,7 @@
         color: #EEEEEE;
         text-shadow: 1px 1px 30px black; }
   #aboutUsMain #aboutUs {
-    padding-top: 61px; }
+    padding-top: 120px; }
     #aboutUsMain #aboutUs img {
       filter: brightness(40%); }
     #aboutUsMain #aboutUs h1 {

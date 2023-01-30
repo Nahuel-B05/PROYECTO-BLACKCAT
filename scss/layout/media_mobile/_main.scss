@@ -2,11 +2,12 @@ body{
     background: linear-gradient(180deg, rgb(86, 91, 98) 0%, rgba(34,40,49,1) 100%);
     }
 .banner {
-    padding-top: 80px;
+    padding-top: 130px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+    margin-bottom: 50px;
     img{
         height: 300px;
         width: 100%;
@@ -145,10 +146,10 @@ body{
 }
 
 #tituloMangas{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 #tituloFiguras{
-    padding-top: 100px;
+    padding-top: 150px;
     .orderList li a{
         @include links-a(15px);
     }
@@ -239,7 +240,7 @@ body{
 }
 #aboutUsMain{
     #aboutUs{
-        padding-top: 61px;
+        padding-top: 120px;
         img {
             filter: brightness(40%);}
         h1{
