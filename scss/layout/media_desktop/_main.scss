@@ -33,6 +33,7 @@ body{
             text-align: center;
             font-size: 15px;
             letter-spacing: 0.4px;
+            margin: 0px 10px ;
         }
         a{
             @include addcart-boton(15px, 0.5px, (5px 30px) );

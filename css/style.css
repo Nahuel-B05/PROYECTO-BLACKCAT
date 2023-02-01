@@ -101,7 +101,8 @@
         color: black;
         text-align: center;
         font-size: 15px;
-        letter-spacing: 0.4px; }
+        letter-spacing: 0.4px;
+        margin: 0px 10px; }
       .banner .cardBanner a {
         color: #EEEEEE;
         letter-spacing: 0.5px;
@@ -281,6 +282,7 @@
         display: flex;
         gap: 40px; }
         #aboutUsMain .articles .contenedorArticle .cuadroTexto {
+          width: 50%;
           margin-left: 70px; }
           #aboutUsMain .articles .contenedorArticle .cuadroTexto p {
             text-align: justify;
@@ -290,11 +292,15 @@
               text-shadow: 1px 1px 3px #EEEEEE;
               color: black; }
         #aboutUsMain .articles .contenedorArticle .cuadroTextoDos {
-          margin-right: 70px; }
+          width: 50%;
+          margin-right: 80px; }
           #aboutUsMain .articles .contenedorArticle .cuadroTextoDos p {
             text-align: justify;
             color: #EEEEEE;
             text-shadow: 1px 1px 1px black; }
+            #aboutUsMain .articles .contenedorArticle .cuadroTextoDos p strong {
+              text-shadow: 1px 1px 3px #EEEEEE;
+              color: black; }
     #aboutUsMain .us {
       display: flex;
       margin-left: 70px;
@@ -687,24 +693,24 @@
         header .navBar .secondBar li a {
           text-decoration: none;
           color: #EEEEEE; }
-        header .navBar .secondBar .menuM .submenu-container {
-          display: none; }
-        header .navBar .secondBar:hover .submenu-container {
+        header .navBar .secondBar .menuM:hover .submenu-container {
           display: block;
           position: absolute;
           right: 5px;
           background-color: #222831;
           padding: 0px 20px;
           padding-bottom: 5px; }
-          header .navBar .secondBar:hover .submenu-container ul {
+          header .navBar .secondBar .menuM:hover .submenu-container ul {
             display: block;
             list-style: none; }
-            header .navBar .secondBar:hover .submenu-container ul li a {
+            header .navBar .secondBar .menuM:hover .submenu-container ul li a {
               padding: 10px 10px;
               text-transform: uppercase;
               font-size: 15px; }
-              header .navBar .secondBar:hover .submenu-container ul li a:hover {
+              header .navBar .secondBar .menuM:hover .submenu-container ul li a:hover {
                 color: #FD7014; }
+        header .navBar .secondBar .menuM .submenu-container {
+          display: none; }
   body {
     background: linear-gradient(180deg, #565b62 0%, #222831 100%); }
   .banner {
@@ -720,7 +726,7 @@
       grid-column: 1/13;
       grid-row: 1/13; }
     .banner .cardBanner {
-      background-color: #eeeeee92;
+      background-color: #eeeeeed4;
       box-shadow: 1px 1px 10px 0px black;
       display: flex;
       flex-direction: column;
@@ -738,14 +744,14 @@
         color: #EEEEEE;
         letter-spacing: 0.5px;
         background-color: #fd7014;
-        padding: 0px;
-        font-size: 20px;
+        padding: 5px 5px;
+        font-size: 15px;
         text-shadow: 1px 1px 2px black;
         text-transform: uppercase;
         box-shadow: 1px 1px 8px 1px black;
         text-decoration: none;
         text-align: center;
-        margin: 0px 10px; }
+        margin: 0px 40px; }
     .banner .flechas {
       display: flex;
       justify-content: space-between;
@@ -945,12 +951,12 @@
       color: #EEEEEE;
       text-shadow: 1px 1px black;
       margin-bottom: 15px; }
-    #aboutUsMain .articles p {
+    #aboutUsMain .articles .contenedorArticle article p {
       color: #EEEEEE;
       text-align: justify;
       text-shadow: 1px 1px black;
       margin-bottom: 40px; }
-      #aboutUsMain .articles p strong {
+      #aboutUsMain .articles .contenedorArticle article p strong {
         color: black;
         text-shadow: 1px 1px 3px #EEEEEE; }
   #aboutUsMain .us {

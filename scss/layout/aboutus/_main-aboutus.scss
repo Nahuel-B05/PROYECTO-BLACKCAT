@@ -32,6 +32,7 @@
         display: flex;
         gap: 40px;
         .cuadroTexto{    
+            width: 50%;
             margin-left: 70px;
             p{
                 text-align: justify;
@@ -43,12 +44,16 @@
                 }
             }}
     .cuadroTextoDos{
-        margin-right: 70px;
+        width: 50%;
+        margin-right: 80px;
         p{
             text-align: justify;
             color: $blanco;
             text-shadow: 1px 1px 1px black;
-            
+            strong{
+                text-shadow: 1px 1px 3px $blanco;
+                color: black;
+            }
         }}}}
     .us{
     display: flex;
