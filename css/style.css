@@ -642,67 +642,73 @@
 @media (max-width: 418px) {
   header {
     width: 100%;
-    height: 120px;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
     z-index: 1;
     background-color: #222831; }
     header .logo {
-      width: 40%; }
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 10px; }
       header .logo img {
         width: 50px;
         height: 50px;
         background-color: #EEEEEE;
         border-radius: 50%;
         border: 1px solid black;
-        margin-left: 30px;
-        margin-top: 20px; }
+        margin-left: 5px;
+        margin-top: 5px; }
       header .logo h2 {
         font-size: 20px;
         letter-spacing: 1px;
-        color: #EEEEEE;
-        margin-left: 20px; }
+        color: #EEEEEE; }
     header .navBar {
-      width: 60%;
+      width: 50%;
       align-self: flex-end;
-      display: flex;
-      justify-content: space-evenly; }
+      display: flex; }
       header .navBar h2 {
         color: #EEEEEE;
         font-size: 20px; }
       header .navBar .firstBar {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        list-style: none; }
-        header .navBar .firstBar li a {
-          text-decoration: none;
-          color: #EEEEEE;
-          text-transform: uppercase; }
+        display: none; }
       header .navBar .secondBar {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
+        width: 50%;
         list-style: none;
-        height: 100px;
-        justify-content: flex-end;
         margin: 0;
-        align-items: flex-end; }
+        display: inline-flex;
+        gap: 15px; }
         header .navBar .secondBar img {
           height: 25px;
           width: 25px;
           align-self: center; }
-        header .navBar .secondBar .menuM {
-          display: none; }
         header .navBar .secondBar li a {
           text-decoration: none;
           color: #EEEEEE; }
+        header .navBar .secondBar .menuM .submenu-container {
+          display: none; }
+        header .navBar .secondBar:hover .submenu-container {
+          display: block;
+          position: absolute;
+          right: 5px;
+          background-color: #222831;
+          padding: 0px 20px;
+          padding-bottom: 5px; }
+          header .navBar .secondBar:hover .submenu-container ul {
+            display: block;
+            list-style: none; }
+            header .navBar .secondBar:hover .submenu-container ul li a {
+              padding: 10px 10px;
+              text-transform: uppercase;
+              font-size: 15px; }
+              header .navBar .secondBar:hover .submenu-container ul li a:hover {
+                color: #FD7014; }
   body {
     background: linear-gradient(180deg, #565b62 0%, #222831 100%); }
   .banner {
-    padding-top: 130px;
+    padding-top: 60px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -842,9 +848,9 @@
           padding: 5px 0px;
           color: #EEEEEE; }
   #tituloMangas {
-    padding-top: 150px; }
+    padding-top: 90px; }
   #tituloFiguras {
-    padding-top: 150px; }
+    padding-top: 90px; }
     #tituloFiguras .orderList li a {
       color: #EEEEEE;
       text-decoration: none;
@@ -925,7 +931,7 @@
         color: #EEEEEE;
         text-shadow: 1px 1px 30px black; }
   #aboutUsMain #aboutUs {
-    padding-top: 120px; }
+    padding-top: 60px; }
     #aboutUsMain #aboutUs img {
       filter: brightness(40%); }
     #aboutUsMain #aboutUs h1 {
