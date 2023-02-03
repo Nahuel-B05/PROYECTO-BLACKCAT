@@ -265,13 +265,13 @@ body{
         h2{
             text-align: center;
             color: $blanco;
-            text-shadow: 1px 1px black;
+            text-shadow: 1px 1px 1px black;
             margin-bottom: 15px;
         }
         .contenedorArticle article p{
             color:$blanco;
             text-align: justify;
-            text-shadow: 1px 1px black;
+            text-shadow: 1px 1px 1px black;
             margin-bottom: 40px;
             strong{
                 color: black;
@@ -289,13 +289,13 @@ body{
             h2{
                 text-align: center;
                 color: $blanco;
-                text-shadow: 1px 1px black;
+                text-shadow: 1px 1px 1px black;
                 margin-top: 20px;
             }
             p{
                 text-align: justify;
                 color: $blanco;
-                text-shadow: 1px 1px black;
+                text-shadow: 1px 1px 1px black;
                 strong{
                     color: black;
                     text-shadow: 1px 1px 2px $blanco;
@@ -372,10 +372,12 @@ body{
         .contenedorPreview{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         img{
             width: 180px;
             height: 300px;
             margin-left: 7px;
+            margin-bottom: 5px;
         }}
     }
     .relateds{
@@ -387,9 +389,7 @@ body{
             text-shadow: 1px 1px 2px black;
             text-align: center;
         }
-        .mangas{
-            .flechas{
-                display: none;
-            }
+        #flechasAdd{
+            display: none;
         }
-    }
+        }
