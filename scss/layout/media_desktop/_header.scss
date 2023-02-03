@@ -31,12 +31,13 @@ header {
 .navBar{
         display: flex;
         align-items: flex-end;
+        justify-content: flex-end;
         gap: 30px;
         width: 100%;
         .firstBar{
-            width: 60%;
+            width: 80%;
             justify-self: center;
-            @include flex-ul(flex-end, 50px);
+            @include flex-ul(center, 50px);
             li a{
                 @include links-a(20px);
                 &:hover{
@@ -46,7 +47,8 @@ header {
             }
         }
         .secondBar {
-            width: 30%;
+            width: 20%;
+            margin-right: 20px;
             @include flex-ul(flex-end,20px);
             li a img{
                 width: 25px;

@@ -22,7 +22,7 @@ header {
         margin-top: 5px;
     }
     h2{
-        font-size: 20px;
+        font-size: 30px;
         letter-spacing: 1px;
         color: $blanco;
     }
@@ -37,9 +37,11 @@ header {
         display: none;
     }
     .secondBar{
+        width: 50%;
         list-style: none;
+        margin: 0;
+        display: flex;
         margin-right: 30px;
-        display: inline-flex;
         gap: 15px;
         img{
             height: 25px;
@@ -65,7 +67,7 @@ header {
                 li a{
                     padding: 10px 10px;
                     text-transform: uppercase;
-                    font-size: 15px;
+                    font-size: 20px;
                 &:hover{
                     color: $naranja;
                 }}
@@ -74,4 +76,5 @@ header {
             .submenu-container{
             display: none;
         }}
-    }}}
+    }}
+}
