@@ -3,12 +3,14 @@ main{
     width: 100%;
     padding-top: 18px;
     @include grid(repeat(12,1fr),repeat(8,1fr));
-    img{
+    #fondito{
         width: 100%;
         margin: auto;
         grid-column: 1/13;
         grid-row: 1/8;
         max-height: 90%;
+        filter: brightness(70%);
+        z-index: -1;
     }
     .cardAddCart{
         grid-column: 1/13;
