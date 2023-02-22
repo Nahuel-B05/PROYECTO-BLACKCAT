@@ -12,4 +12,5 @@
 - SCSS como pre-procesador
 - Subir la web a un Host
 - GitHub
+- SEO
 ----
